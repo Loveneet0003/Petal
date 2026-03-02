@@ -752,6 +752,7 @@ body {
   // ── File Upload (Supabase storage) ───────────────────────────
   const fileInputEl = document.getElementById('file-input');
   if (fileInputEl) {
+    console.log("File input triggered");
     fileInputEl.addEventListener('change', async (e) => {
       const files = Array.from(e.target.files || []);
       if (!files.length) return;
